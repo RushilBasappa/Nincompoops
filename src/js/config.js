@@ -1,69 +1,66 @@
 export const Members = [
-  "Ahmad",
-  "Amr",
-  "Aishu",
-  "Fahd",
-  "Sasha",
-  "Megaa",
-  "Ruby",
-  "Ruch",
-  "Sanju",
-  "Appa",
-  "Rithu",
-  "Fatty",
-  "Rushil",
-  "Chaitu",
-  "Muqeeth",
-  "Rinky"
+  {
+    "name": "Ahmad",
+    "image": "https://dummyimage.com/300"
+  },
+  {
+    "name": "Amr",
+    "image": "https://dummyimage.com/300"
+  },
+  {
+    "name": "Aishu",
+    "image": "https://dummyimage.com/300"
+  },
+  {
+    "name": "Fahd",
+    "image": "https://dummyimage.com/300"
+  },
+  {
+    "name": "Sasha",
+    "image": "https://dummyimage.com/300"
+  },
+  {
+    "name": "Megaa",
+    "image": "https://dummyimage.com/300"
+  },
+  {
+    "name": "Ruby",
+    "image": "https://dummyimage.com/300"
+  },
+  {
+    "name": "Ruch",
+    "image": "https://dummyimage.com/300"
+  },
+  {
+    "name": "Sanju",
+    "image": "https://dummyimage.com/300"
+  },
+  {
+    "name": "Appa",
+    "image": "https://dummyimage.com/300"
+  },
+  {
+    "name": "Rithu",
+    "image": "https://dummyimage.com/300"
+  },
+  {
+    "name": "Fatty",
+    "image": "https://dummyimage.com/300"
+  },
+  {
+    "name": "Rushil",
+    "image": "https://dummyimage.com/300"
+  },
+  {
+    "name": "Chaitu",
+    "image": "https://dummyimage.com/300"
+  },
+  {
+    "name": "Muqeeth",
+    "image": "https://dummyimage.com/300"
+  },
+  {
+    "name": "Rinky",
+    "image": "https://dummyimage.com/300"
+  },
 ]
-
-export const Details = {
-  "Ahmad": {
-    "image": "https://dummyimage.com/300"
-  },
-  "Amr": {
-    "image": "https://dummyimage.com/300"
-  },
-  "Aishu": {
-    "image": "https://dummyimage.com/300"
-  },
-  "Fahd": {
-    "image": "https://dummyimage.com/300"
-  },
-  "Sasha": {
-    "image": "https://dummyimage.com/300"
-  },
-  "Megaa": {
-    "image": "https://dummyimage.com/300"
-  },
-  "Ruby": {
-    "image": "https://dummyimage.com/300"
-  },
-  "Ruch": {
-    "image": "https://dummyimage.com/300"
-  },
-  "Sanju": {
-    "image": "https://dummyimage.com/300"
-  },
-  "Appa": {
-    "image": "https://dummyimage.com/300"
-  },
-  "Rithu": {
-    "image": "https://dummyimage.com/300"
-  },
-  "Fatty": {
-    "image": "https://dummyimage.com/300"
-  },
-  "Rushil": {
-    "image": "https://dummyimage.com/300"
-  },
-  "Chaitu": {
-    "image": "https://dummyimage.com/300"
-  },
-  "Muqeeth": {
-    "image": "https://dummyimage.com/300"
-  },
-  "Rinky": {
-    "image": "https://dummyimage.com/300"
-  },
-}

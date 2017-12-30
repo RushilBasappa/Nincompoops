@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Nincompoops from './js/components/Nincompoops.js'
+import Nincompoops from './js/components/Nincompoops.js';
+import { BrowserRouter } from 'react-router-dom';
 
 class App extends React.Component {
   render() {
@@ -12,4 +13,9 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('container'));
+ReactDOM.render((
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+), document.getElementById('container')
+);
