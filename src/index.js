@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Nincompoops from './js/components/Nincompoops.js';
 import { BrowserRouter } from 'react-router-dom';
+import 'uikit/dist/css/uikit.min.css';
 
 class App extends React.Component {
   render() {
@@ -10,7 +11,7 @@ class App extends React.Component {
         <Nincompoops />
       </div>
     )
-  }
+  } 
 }
 
 ReactDOM.render((
