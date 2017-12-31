@@ -17,9 +17,9 @@ const Navbar = (props) => {
     <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
       <div className="uk-container uk-container-expand">
         <nav className="uk-navbar-container uk-margin" uk-navbar="mode: click">
-          <div className="uk-navbar-left">
+          <div className="uk-navbar-center">
             <ul className="uk-navbar-nav">
-              <li class="uk-active">
+              <li className="uk-active">
                 <Link to={`/`}>The Nincompoops</Link>
               </li>
             </ul>

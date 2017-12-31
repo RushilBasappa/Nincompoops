@@ -1,4 +1,5 @@
 import React from 'react';
+import _ from 'lodash';
 
 const SlideShow = (props) => {
   const config = "autoplay:true;animation: fade; autoplay-interval:3000"
@@ -19,17 +20,25 @@ const SlideShow = (props) => {
 
 const PersonalDetails = (props) => {
   return (
-    <div>
-      <h1>{props.member.name}</h1>
+    <article className="uk-article">
+      <h1 className="uk-article-title">{props.member.name}</h1>
+      <p className="uk-article-meta">{props.member.name}</p>
+      <p className="uk-text-lead">{_.concat("testing ", _.times(20).map(i => "testing "))}</p>
+      <div className="uk-grid-small uk-child-width-auto" uk-grid>
+        <div>
+            <button className="uk-button uk-button-text" type="button" uk-toggle="target: #toggle-usage">5 Comments</button>
+            <p id="toggle-usage" hidden>What's up?</p>
+        </div>
     </div>
+    </article>
   )
 }
 
 const Profile = (props) => {
   return (
-    <div className="uk-text-center uk-child-width-1-2@m" uk-grid="true">
-      <SlideShow />
+    <div className="uk-child-width-1-2@m" uk-grid="true">
       <PersonalDetails {...props} />
+      <SlideShow />
     </div>
   )
 }
