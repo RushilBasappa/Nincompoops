@@ -9,7 +9,7 @@ const Profile = (props) => {
   return (
     <div>
       <div className="uk-child-width-1-2@m" uk-grid="true">
-        <PersonalDetails {...props} />
+        <PersonalDetails {...props.member} />
         <SlideShow />
       </div>
       <CommentsList />
