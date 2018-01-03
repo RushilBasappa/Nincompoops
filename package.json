@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --exec babel-node -- ./server.js"
+    "start": "nodemon --watch ./server.js --exec babel-node -- ./server.js"
   },
   "dependencies": {
     "axios": "^0.17.1",
@@ -12,6 +12,7 @@
     "body-parser": "^1.18.2",
     "css-loader": "^0.28.7",
     "express": "^4.16.2",
+    "file-loader": "^1.1.6",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",
     "material-ui": "^0.20.0",
@@ -22,6 +23,7 @@
     "react-router-dom": "^4.2.2",
     "style-loader": "^0.19.1",
     "uikit": "^3.0.0-beta.35",
+    "url-loader": "^0.6.2",
     "webpack": "^3.10.0"
   },
   "devDependencies": {
