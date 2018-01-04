@@ -11,7 +11,7 @@ const Card = (props) => {
         <div className="uk-card uk-card-default" >
           <div className="uk-card-media-top">
             <img src={logo} alt="" height="184"/>
-            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-padding-small uk-text-center">
+            <div className="uk-overlay uk-overlay-primary uk-position-bottom uk-padding-small uk-text-center">
                 <p>{username[0].toUpperCase().concat(username.slice(1))}</p>
             </div>
           </div>

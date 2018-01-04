@@ -14,32 +14,41 @@ UIkit.use(Icons);
 
 class Nincompoops extends React.Component {
   state = {
-    members: []
+    members: [],
+    loading: true
   }
   componentDidMount() {
     axios.get('/api/members')
       .then(res => {
-        this.setState({ members: res.data });
+        this.setState({
+          members: res.data.members,
+          loading: false
+        });
       })
   }
   render() {
-    let member = "";
-    return (
-      <div style={{ WebkitFontSmoothing: 'antialiased' }}>
-        <Navbar />
-        <div className="uk-container uk-container-center uk-margin-top uk-margin-medium-bottom">
-          <Route exact path="/" render={() => (<MainPage />)} />
-          <Route exact path="/members" render={() => (<CardList members={this.state.members} />)} />
-          <Route path="/members/:name" render={({ match }) => {
-            if ((member = this.state.members.find(m => m.username === match.params.name))) {
-              return <Profile member={member} />
-            } else {
-              return <Redirect to="/" />
-            }
-          }} />
-        </div >
-      </div>
-    )
+    if (this.state.loading) {
+      return (null)
+    } else {
+      let member = "";
+      return (
+        <div style={{ WebkitFontSmoothing: 'antialiased' }}>
+          <Navbar />
+          <div className="uk-container uk-container-center uk-margin-top uk-margin-medium-bottom">
+            <Route exact path="/" render={() => (<MainPage />)} />
+            <Route exact path="/members" render={() => (<CardList members={this.state.members} />)} />
+            <Route path="/members/:name" render={({ match }) => {
+              member = this.state.members.find(m => m.username === match.params.name)
+              if (member) {
+                return (<Profile member={member} />)
+              } else {
+                // return <Redirect to="/" />
+              }
+            }} />
+          </div >
+        </div>
+      )
+    }
   }
 }
 
