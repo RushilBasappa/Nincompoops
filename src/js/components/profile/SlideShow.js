@@ -13,7 +13,7 @@ const SlideShow = (props) => {
     <div>
       <div className="uk-position-relative uk-visible-toggle uk-light" uk-slideshow={config}>
         <ul className="uk-slideshow-items">
-          {Object.values(images).map(image => (<li><img src={image} alt="" uk-cover="true" /></li>))}
+          {Object.values(images).map((image,i) => (<li key={i}><img src={image} alt="" uk-cover="true" /></li>))}
         </ul>
         <a className="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous="" uk-slideshow-item="previous"></a>
         <a className="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next="" uk-slideshow-item="next"></a>
