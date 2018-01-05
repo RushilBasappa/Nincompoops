@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../../../images/bgp.jpg";
+import logo from "../../../images/group/bg.jpg";
 
 const MainPage = () => {
   return (

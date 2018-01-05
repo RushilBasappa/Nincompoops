@@ -1,16 +1,21 @@
 import React from 'react';
 import Link from 'react-router-dom/Link';
-import logo from '../../../images/rushil.jpg';
 
+const importAll = (r) => {
+  let images = {};
+  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
 
 const Card = (props) => {
   const { username } = props.member;
+  const images = importAll(require.context('../../../images/', false, /\.(png|jpe?g|svg)$/));
   return (
     <div>
       <Link to={`/members/${username}`}>
         <div className="uk-card uk-card-default" >
           <div className="uk-card-media-top">
-            <img src={logo} alt="" height="184"/>
+            <img src={images[`${username}.jpg`]} alt=""/>
             <div className="uk-overlay uk-overlay-primary uk-position-bottom uk-padding-small uk-text-center">
                 <p>{username[0].toUpperCase().concat(username.slice(1))}</p>
             </div>

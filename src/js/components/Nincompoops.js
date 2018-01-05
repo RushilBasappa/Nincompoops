@@ -42,7 +42,7 @@ class Nincompoops extends React.Component {
               if (member) {
                 return (<Profile member={member} />)
               } else {
-                // return <Redirect to="/" />
+                return <Redirect to="/" />
               }
             }} />
           </div >
